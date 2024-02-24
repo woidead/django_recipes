@@ -8,9 +8,9 @@
 <div class="container">
     <h2>Список рецептов</h2>
     {% for recipe in recipes %}
-      <div>
-        <h3><a href="">{{ recipe.title }}</a></h3>
-        <p>{{ recipe.description }}</p>
+      <div class="recipe">
+        <h3 class="title"><a href="" class="title_link">{{ recipe.title|title }}</a></h3>
+        <p class="description">{{ recipe.description }}</p>
       </div>
     {% endfor %}
 </div> 
