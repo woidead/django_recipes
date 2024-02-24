@@ -1,0 +1,18 @@
+{% extends "recipes/base.html" %}
+
+{% block title %} Список рецептов {% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    <h2>Список рецептов</h2>
+    {% for recipe in recipes %}
+      <div>
+        <h3><a href="">{{ recipe.title }}</a></h3>
+        <p>{{ recipe.description }}</p>
+      </div>
+    {% endfor %}
+</div> 
+
+{% endblock %}
